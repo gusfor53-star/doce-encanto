@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doce Encanto</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial;
+  background: #fafafa;
+}
+
+/* HEADER */
+.header {
+  background: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ec4899;
+}
+
+/* BANNER */
+.banner {
+  background: linear-gradient(90deg, #ec4899, #f97316);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.banner p {
+  margin-top: 10px;
+}
+
+/* PRODUTOS */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 15px;
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.desc {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.preco {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #22c55e;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">🍰 Doce Encanto</div>
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+  <h1>Doces artesanais irresistíveis 😍</h1>
+  <p>Feito no dia • Entregas rápidas</p>
+</div>
+
+<!-- PRODUTOS -->
+<div class="container">
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606312619344-ff9d6c9c08b3">
+      <div class="info">
+        <div class="nome">Brownie Gourmet</div>
+        <div class="desc">Casquinha crocante e interior macio</div>
+        <div class="preco">R$12</div>
+        <a href="https://wa.me/5512991956217">
+          <button>Pedir no WhatsApp</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+      <div class="info">
+        <div class="nome">Bolo no Pote</div>
+        <div class="desc">Cremoso e recheado</div>
+        <div class="preco">R$10</div>
+        <a href="https://wa.me/5512991956217">
+          <button>Pedir no WhatsApp</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+      <div class="info">
+        <div class="nome">Brigadeiro Gourmet</div>
+        <div class="desc">Chocolate premium</div>
+        <div class="preco">R$6</div>
+        <a href="https://wa.me/5512991956217">
+          <button>Pedir no WhatsApp</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  📞 (12) 99195-6217  
+  <br><br>
+  ⭐ Mais de 50 clientes satisfeitos
+</div>
+
+</body>
+</html>
