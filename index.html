@@ -3,51 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Doce Encanto</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial;
+  font-family: 'Poppins', sans-serif;
   background: #fafafa;
 }
 
 /* HEADER */
 .header {
   background: white;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.logo {
-  font-size: 20px;
-  font-weight: bold;
-  color: #ec4899;
-}
-
-/* BANNER */
-.banner {
-  background: linear-gradient(90deg, #ec4899, #f97316);
-  color: white;
-  padding: 40px 20px;
   text-align: center;
+  padding: 30px 20px 10px;
 }
 
-.banner h1 {
-  margin: 0;
+/* LOGO */
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+/* NOME */
+.brand {
   font-size: 28px;
+  font-weight: 600;
+  color: #e11d48;
 }
 
-.banner p {
-  margin-top: 10px;
+/* SUB */
+.sub {
+  color: #999;
+  font-size: 14px;
 }
 
-/* PRODUTOS */
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.hero h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.hero p {
+  color: #777;
+}
+
+/* GRID */
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
 }
@@ -58,21 +69,17 @@ body {
   gap: 20px;
 }
 
+/* CARD */
 .card {
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 170px;
   object-fit: cover;
 }
 
@@ -81,22 +88,21 @@ body {
 }
 
 .nome {
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 600;
 }
 
 .desc {
   font-size: 13px;
-  color: #666;
+  color: #777;
   margin: 5px 0;
 }
 
 .preco {
-  font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 10px 0;
 }
 
+/* BOTÃO */
 button {
   width: 100%;
   padding: 10px;
@@ -104,15 +110,16 @@ button {
   background: #22c55e;
   color: white;
   border-radius: 8px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 20px;
-  color: #777;
+  padding: 30px;
+  color: #888;
+  font-size: 13px;
 }
 </style>
 
@@ -120,15 +127,21 @@ button {
 
 <body>
 
-<!-- HEADER -->
+<!-- HEADER COM LOGO -->
 <div class="header">
-  <div class="logo">🍰 Doce Encanto</div>
+
+  <!-- USA ESSA IMAGEM COMO LOGO -->
+  <img class="logo" src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+
+  <div class="brand">Doce Encanto</div>
+  <div class="sub">Doces artesanais</div>
+
 </div>
 
-<!-- BANNER -->
-<div class="banner">
-  <h1>Doces artesanais irresistíveis 😍</h1>
-  <p>Feito no dia • Entregas rápidas</p>
+<!-- HERO -->
+<div class="hero">
+  <h1>Doces feitos com carinho 💖</h1>
+  <p>Feito no dia • Entrega rápida</p>
 </div>
 
 <!-- PRODUTOS -->
@@ -142,7 +155,7 @@ button {
         <div class="desc">Casquinha crocante e interior macio</div>
         <div class="preco">R$12</div>
         <a href="https://wa.me/5512991956217">
-          <button>Pedir no WhatsApp</button>
+          <button>Pedir</button>
         </a>
       </div>
     </div>
@@ -154,7 +167,7 @@ button {
         <div class="desc">Cremoso e recheado</div>
         <div class="preco">R$10</div>
         <a href="https://wa.me/5512991956217">
-          <button>Pedir no WhatsApp</button>
+          <button>Pedir</button>
         </a>
       </div>
     </div>
@@ -166,7 +179,7 @@ button {
         <div class="desc">Chocolate premium</div>
         <div class="preco">R$6</div>
         <a href="https://wa.me/5512991956217">
-          <button>Pedir no WhatsApp</button>
+          <button>Pedir</button>
         </a>
       </div>
     </div>
@@ -176,9 +189,9 @@ button {
 
 <!-- FOOTER -->
 <div class="footer">
-  📞 (12) 99195-6217  
-  <br><br>
-  ⭐ Mais de 50 clientes satisfeitos
+📞 (12) 99195-6217  
+<br><br>
+✨ Feito no dia • Entrega rápida
 </div>
 
 </body>
